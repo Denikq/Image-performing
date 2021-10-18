@@ -1,5 +1,5 @@
 # Image-performing
-Creating an image in any graphical format from dataset in text file
+Creating an image in chosen graphical format from dataset in text file
 
 Description:
 Project consits of dataset file DS3.txt of coordinates by two integers (x and y axis) , program file Program.py in python programming language and some examples in different graphical formats (the most popular: JPEG, PNG, PDF and others).
