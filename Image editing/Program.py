@@ -66,13 +66,14 @@ coordinates = dots.coordinates
 class Performdots:
 
     x, y = coordinates.T
+    
+    px = 1 / plt.rcParams['figure.dpi']
+    plt.subplots(figsize=(960 * px, 540 * px))
+
     plt.scatter(x, y)
-    plt.rcParams['figure.dpi'] = 200
 
-    px = 1/plt.rcParams['figure.dpi']
-    plt.rcParams["figure.figsize"] = (540*px, 960*px)
-
-    gra_format = 'tiff'
-    plt.savefig(f'Figure.{gra_format}', dpi = 200)
+    gra_format = 'png'
+    plt.savefig(f'Figure.{gra_format}', dpi=200)
     plt.show()
+
 
